@@ -14,6 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                input 'Continue?'
                 echo 'Deploying....'
             }
         }
