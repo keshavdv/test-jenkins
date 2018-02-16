@@ -24,8 +24,5 @@ pipeline {
             input 'Continue?'
             echo 'Deploying....'
         }
-        failure {
-            mail to: team@example.com, subject: 'The Pipeline failed :('
-        }
     }
 }
