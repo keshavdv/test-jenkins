@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                echo "FILE DATA" > testfile
+                sh 'echo "FILE DATA" > testfile'
             }
         }
     }
